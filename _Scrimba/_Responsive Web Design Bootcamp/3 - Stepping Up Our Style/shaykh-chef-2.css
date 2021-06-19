@@ -1,0 +1,217 @@
+/*  font-family: 'Source Sans Pro', sans-serif;  */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: natom-pro, sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  color: #404040;
+  text-align: center;
+}
+
+/* =================
+ Typography 
+ ================= */
+
+h1 {
+  font-size: 2.25rem;
+  font-weight: 300;
+  color: #fff;
+  margin: 0;
+}
+
+h1 + p {
+  color: #f18119;
+  font-weight: 900;
+  font-size: 1.3125rem;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+h2 {
+  font-size: 1.3125rem;
+  margin: 0;
+}
+
+h2 + p {
+  font-weight: 900;
+  color: #f18119;
+  margin-top: 0;
+  text-transform: uppercase;
+}
+
+.top-text {
+  margin: 0;
+  padding-top: 3px;
+  font-family: natom-pro-title, sans-serif;
+  font-weight: 700;
+  font-size: 0.725rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--orange);
+  border-top: 5px solid var(--orange);
+  border-image: linear-gradient(to right, var(--i-orange), var(--i-blue)) 1;
+  order: -1;
+}
+
+.fine-print {
+  font-size: 0.625rem;
+  letter-spacing: 1px;
+}
+
+strong {
+  font-weight: 900;
+}
+
+/* =================
+ Intro section 
+ ================= */
+
+.intro {
+  background-image: url(media/images/shaykh-chef-tajin-1.jpg),
+    linear-gradient(45deg, red, blue);
+  /* background-color: #ff0000; */
+  background-blend-mode: screen;
+  background-size: cover;
+  background-position: center;
+  padding: 0 0.5em 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 50vh;
+}
+
+.basmallah {
+  font-family: co-arabic, sans-serif;
+  font-weight: 400;
+  font-size: 105%;
+  padding: 0 0 1em 0;
+  display: inline-block;
+}
+
+.intro-body {
+  /* background-color: hsla(0, 0%, 100%, 0.65); */
+  /* border-radius: 5px; */
+  transform: scale(1);
+  transition: transform 300ms;
+  padding: 0 0.5em 2em;
+  order: 2;
+}
+
+.intro-body:hover,
+.intro-body:focus {
+  transform: scale(1.1);
+}
+
+.intro-link {
+  font-size: 3vw;
+  background-color: hsla(0, 0%, 100%, 0.7);
+  border-radius: 5px;
+  padding: 0.25em 0.5em 0.4em 0.5em;
+  /* display: inline-block; */
+  order: 3;
+}
+
+/* =================
+ main-content section 
+ ================= */
+
+.main-content {
+  margin: 0;
+  padding: 2em 1em;
+}
+
+.intro > *,
+.main-content > * {
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* =================
+ form
+ ================= */
+
+.email-collector {
+  width: 80%;
+  max-width: 300px;
+}
+
+input,
+.btn {
+  width: 100%;
+  border-radius: 5px;
+}
+
+input {
+  font-family: inherit;
+  text-align: inherit;
+  margin-bottom: 0.75em;
+  padding: 0.25em;
+  border: 1px solid #404040;
+  transform: scale(1);
+  transition: transform 250ms;
+}
+
+input:focus {
+  transform: scale(1.1);
+}
+
+.btn {
+  display: inline-block;
+  padding: 1em 1.5em;
+  font-size: 0.625rem;
+  text-transform: uppercase;
+  font-weight: 900;
+  letter-spacing: 1px;
+  border: 0;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background-image: linear-gradient(to left, #ff713b, #ffa51d);
+  color: white;
+  transform: scale(1);
+  transition: transform 250ms;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  transform: scale(1.1);
+}
+
+/* =================
+ media queries 
+ ================= */
+
+@media (min-width: 500px) {
+  body {
+    font-size: 1.125rem;
+    display: flex;
+  }
+
+  h1 {
+    font-size: 3.5rem;
+  }
+
+  h2,
+  h1 + p {
+    font-size: 1.75rem;
+  }
+
+  .intro,
+  .main-content {
+    width: 50%;
+    min-height: 100vh;
+  }
+
+  .main-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}

@@ -1,0 +1,125 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1,
+h2,
+p {
+  margin: 0;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+p {
+  font-size: 1.25rem;
+}
+
+section h2 {
+  color: hsla(10, 85%, 58%, 1);
+  font-weight: 900;
+  margin-bottom: 1rem;
+}
+
+section p {
+  line-height: 1.75rem;
+  margin: 0 0 1rem 0;
+}
+
+section p a {
+  text-decoration: underline;
+}
+
+section a {
+  color: hsla(10, 85%, 58%, 1);
+  font-weight: 900;
+  text-decoration: none;
+}
+
+/* the idea here is to make the background color extend to the edge of the viewport while the content stays centered on the page. to do this, remove the margin 0 auto and width properties from the elements [header, section, etc.] and move them to a <div> */
+
+.container {
+  width: 58%;
+  margin: 0 auto;
+}
+
+/* if you want to have the content centered w/o the background color extending to the viewport then leave the margin 0 auto and width inside the respective elements such as header or section. */
+
+.header,
+.section-1,
+.section-2 {
+  /* margin: 0 auto; */
+  padding: 3rem;
+  /* width: 58%; */
+}
+
+.header {
+  background: hsla(227, 26%, 25%, 1);
+  color: hsla(1, 0%, 100%, 1);
+}
+
+.header h1 {
+  font-weight: 900;
+}
+
+.section-1 {
+  background: hsla(0, 0%, 94%, 1);
+}
+
+.section-1 img {
+  width: 100%;
+  margin: 0 0 1rem 0;
+}
+
+.section-2 {
+  background: hsla(227, 26%, 25%, 1);
+  color: hsla(1, 0%, 100%, 1);
+}
+
+.links {
+  margin: 2rem 0 0 0;
+}
+
+.links a {
+  text-decoration: none;
+}
+
+.btn {
+  display: inline-block;
+  padding: 1rem 2rem;
+  margin: 0 1rem 0 0;
+}
+
+.btn-orange {
+  color: hsla(1, 0%, 100%, 1);
+  background: hsla(10, 85%, 58%, 1);
+}
+
+.btn-orange:hover {
+  color: hsla(10, 85%, 58%, 1);
+  background: hsla(1, 0%, 100%, 1);
+}
+
+.btn-white {
+  color: hsla(1, 0%, 0%, 1);
+  background: hsla(1, 0%, 100%, 1);
+}
+
+.btn-white:hover {
+  background: hsla(1, 0%, 0%, 1);
+  color: hsla(1, 0%, 100%, 1);
+}

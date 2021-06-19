@@ -1,0 +1,34 @@
+body {
+  background: hsl(0, 0%, 33%);
+  color: hsl(0, 0%, 100%);
+}
+
+header,
+main,
+footer {
+  width: 375px;
+  border: solid 20px;
+  padding: 4rem;
+}
+
+header {
+  background: hsl(0, 0%, 100%);
+  color: hsl(0, 0%, 20%);
+  border-color: hsl(0, 70%, 36%);
+  margin: 2rem 0 1rem 4rem;
+}
+
+main {
+  background: hsl(0, 0%, 100%);
+  color: hsl(200, 70%, 56%);
+  border-color: hsl(0, 100%, 50%);
+  margin: 4rem 2rem 3rem 4rem;
+}
+
+footer {
+  background: hsl(33, 59%, 86%);
+  color: hsl(33, 79%, 56%);
+  border-color: hsl(33, 79%, 26%);
+  margin: 4rem 2rem 3rem 4rem;
+  padding: 1rem 4rem;
+}

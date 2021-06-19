@@ -1,0 +1,41 @@
+h1,
+p {
+  margin-top: 0;
+}
+
+h1 {
+  font-size: 24px;
+}
+
+p {
+  font-size: 18px;
+}
+
+a {
+  color: #ffe600;
+}
+
+.accent-color {
+  color: #ffe600;
+}
+
+.button {
+  background: #ffe600;
+  padding: 25px;
+  color: #000;
+  display: inline-block;
+  margin: 0 12px 0 0;
+}
+
+.card {
+  background: #000;
+  color: #fff;
+  width: 560px;
+  margin: 0 auto;
+  padding: 45px;
+}
+
+.links {
+  margin-top: 40px;
+  margin-bottom: 0;
+}

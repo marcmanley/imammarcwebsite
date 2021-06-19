@@ -1,0 +1,282 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: fira-sans, sans-serif;
+  font-style: normal;
+}
+
+/* ======
+   Colors
+   white hsla(0, 0%, 100%, 1)
+   grey hsla(0, 0%, 44%, 1)
+   l.grey hsla(0, 0%, 95%, 1)
+   l.blue hsla(201, 80%, 46%, 1)
+   d.blue hsla(218, 71%, 27%, 1)
+   ======
+*/
+
+/* Typography */
+
+h1 {
+  font-family: source-serif-pro, serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2rem;
+  color: hsla(218, 71%, 27%, 1);
+  margin: 0;
+}
+
+.post strong {
+  font-style: italic;
+}
+
+strong.strong-org {
+  font-weight: 700;
+  font-style: normal;
+}
+
+.subtitle {
+  font-weight: 700;
+  color: hsla(201, 80%, 46%, 1);
+  font-size: 0.75rem;
+  margin: 0;
+  padding: 0 0 1em 0;
+  text-transform: uppercase;
+}
+
+/* Layout */
+
+.container {
+  width: 90%;
+  /* max-width: 900px; */
+  margin: 0 auto;
+  /* padding-bottom: 2rem; */
+}
+
+.mid-section img {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.container-nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+header {
+  background: hsla(0, 0%, 95%, 1);
+  margin: 0;
+  padding: 0;
+  /* padding: 2em 0; */
+  /* margin: 2rem 0 0 0; */
+}
+
+.post {
+  font-family: dolly-new, serif;
+  font-weight: 400;
+  font-style: normal;
+  /* width: 90%; */
+  /* max-width: 900px; */
+  margin: 0 auto;
+  /* padding: 1rem 0 2rem 0; */
+}
+
+.post h2 {
+  font-weight: 700;
+  font-size: 2.5rem;
+  margin: 1rem auto 1rem auto;
+  padding: 0 0 0 2rem;
+  max-width: 900px;
+}
+
+.post p {
+  font-size: 1.5rem;
+  padding: 0 0 1rem 0;
+  line-height: 1.25em;
+  margin: 0 auto;
+  max-width: 900px;
+}
+
+.post a {
+  color: hsla(201, 80%, 46%, 1);
+  text-decoration: none;
+}
+
+.post a:hover,
+.post a:focus {
+  color: hsla(201, 80%, 66%, 1);
+}
+
+/* Navigation */
+
+nav {
+  margin: 1rem 0 0 0;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav li {
+  margin-left: 2em;
+}
+
+nav a {
+  text-decoration: none;
+  color: hsla(0, 0%, 44%, 1);
+  font-weight: 700;
+  padding: 0.25em 0;
+}
+
+nav a:hover,
+nav a:focus {
+  color: hsla(201, 80%, 46%, 1);
+}
+
+.current-page {
+  border-bottom: 1px solid hsla(0, 0%, 44%, 1);
+}
+
+.current-page:hover {
+  color: hsla(0, 0%, 44%, 1);
+}
+
+/* Footer */
+
+.footer {
+  background: hsla(23, 61%, 52%, 1);
+  color: hsla(0, 0%, 95%, 1);
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 1rem;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.footer footer {
+  margin: 0 auto;
+  padding: 2rem;
+  max-width: 900px;
+  line-height: 1.5;
+  text-align: center;
+}
+
+/* Media Queries */
+
+@media (max-width: 1025px) {
+  .container {
+    margin: 0 auto;
+    width: 100%;
+    padding-bottom: 0;
+  }
+
+  .container-nav {
+    flex-direction: column;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+
+  header {
+    margin: 0;
+    text-align: center;
+    /* padding: 1rem 0 0 0; */
+    padding: 0;
+  }
+
+  .subtitle {
+    padding: 0 0 0.5rem 0;
+  }
+
+  img {
+    margin: 0;
+    padding: 0;
+  }
+
+  nav {
+    margin: 0;
+    padding: 0;
+  }
+
+  nav ul {
+    flex-direction: column;
+    /* background: hsla(0, 0%, 44%, 1); */
+    /* color: #fff; */
+  }
+
+  nav li {
+    margin: 0;
+    background: hsla(0, 0%, 44%, 1);
+    border-bottom: 1px solid hsla(0, 0%, 95%, 1);
+    padding: 0.5em 0;
+    font-size: 1.25rem;
+  }
+
+  nav a {
+    color: hsla(0, 0%, 95%, 1);
+  }
+
+  nav a:hover,
+  nav a:focus {
+    color: hsla(0, 0%, 87%, 1);
+  }
+
+  .home {
+    background: hsla(132, 5%, 19%, 1);
+  }
+
+  .ig {
+    background: hsla(97, 9%, 52%, 1);
+  }
+
+  .mg {
+    background: hsla(52, 11%, 64%, 1);
+  }
+
+  .git {
+    background: hsla(45, 40%, 65%, 1);
+  }
+
+  .email {
+    background: hsla(23, 61%, 52%, 1);
+  }
+
+  .current-page {
+    border-bottom: none;
+  }
+
+  .mid-section img {
+    margin: 0 0 1rem 0;
+  }
+
+  .post {
+    width: 100%;
+  }
+
+  .post h2 {
+    font-size: 2rem;
+    /* margin: 0 0 1rem 1.5rem; */
+  }
+
+  .post p {
+    font-size: 1.25rem;
+    padding: 0 2rem 1rem 2rem;
+  }
+
+  .footer {
+    font-size: 0.75rem;
+  }
+}

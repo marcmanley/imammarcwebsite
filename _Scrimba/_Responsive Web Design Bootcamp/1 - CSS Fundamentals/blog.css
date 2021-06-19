@@ -1,0 +1,80 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 {
+  font-size: 4rem;
+  color: hsla(212, 65%, 50%, 1);
+}
+
+h2 {
+  font-size: 2.5rem;
+  color: hsla(212, 80%, 31%, 1);
+}
+
+p {
+  font-size: 1.25rem;
+  color: hsla(0, 0%, 33%, 1);
+}
+
+a,
+a:link,
+a:hover,
+a:focus {
+  text-decoration: none;
+}
+
+a:link {
+  color: hsla(30, 100%, 50%, 1);
+}
+
+a:hover {
+  color: hsla(30, 100%, 60%, 1);
+}
+
+a:focus {
+  color: hsla(212, 80%, 31%, 1);
+}
+
+.top-mast {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.top-mast h1 {
+  text-align: center;
+  margin: 3rem 0;
+}
+
+.blog-post {
+  background: hsla(0, 0%, 90%, 1);
+  width: 650px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.blog-post h2 {
+  margin: 0 0 1.5rem 0;
+}
+
+.blog-post img {
+  width: 100%;
+  margin: 0 0 1.5rem 0;
+}
+
+.blog-post p {
+  margin: 0 0 1rem 0;
+}
+
+.read-more {
+  margin: 0;
+}

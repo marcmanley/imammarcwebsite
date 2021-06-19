@@ -1,0 +1,11 @@
+:root {
+  --white: hsla(0, 0%, 100%, 1);
+  --d-grey: hsla(0, 0%, 44%, 1);
+  --l-grey: hsla(0, 0%, 90%, 1);
+  --v-l-grey: hsla(0, 0%, 95%, 1);
+  --green: hsla(174, 97%, 23%, 1);
+  --tan: hsla(45, 15%, 48%, 1);
+  --l-tan: hsla(45, 18%, 69%, 1);
+  --brown: hsla(34, 36%, 18%, 1);
+  --brick: hsla(5, 63%, 46%, 1);
+}

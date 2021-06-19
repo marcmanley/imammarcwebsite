@@ -1,0 +1,45 @@
+body {
+  background: hsl(0, 0%, 33%);
+  color: hsl(0, 0%, 100%);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+header {
+  background-color: hsl(198, 55%, 35%);
+  padding: 3rem 0;
+}
+
+header h1 {
+  font-size: 3.5rem;
+  text-align: center;
+}
+
+main {
+  background-color: #e4e4e4;
+  color: #000;
+  width: 66%;
+  padding: 2rem;
+  border: solid 5px red;
+  margin: 8% auto; /* important for flex box to put the 0 auto and not just auto */
+}
+
+main h3 {
+  font-size: 2.5rem;
+}
+
+main p {
+  font-size: 1.25rem;
+}
+
+footer {
+  background: hsl(198, 75%, 20%);
+  padding: 2rem 0;
+  font-size: 2rem;
+  text-align: center;
+  margin: 10% auto;
+}

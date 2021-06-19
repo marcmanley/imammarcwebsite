@@ -1,0 +1,17 @@
+:root {
+  --white: hsla(0, 0%, 100%, 1);
+  --d-grey: hsla(0, 0%, 44%, 1);
+  --l-grey: hsla(0, 0%, 90%, 1);
+  --v-l-grey: hsla(0, 0%, 95%, 1);
+  --l-blue: hsla(201, 80%, 46%, 1);
+  --d-blue: hsla(218, 71%, 27%, 1);
+  --mg-blue: hsla(208, 56%, 53%, 1);
+  --mg-brown: hsla(25, 65%, 26%, 1);
+  --d-red: hsla(0, 100%, 25%, 1);
+  --d-orange: hsla(23, 61%, 52%, 1);
+  --b-orange: hsla(21, 100%, 50%, 1);
+  --d-green: hsla(132, 5%, 19%, 1);
+  --l-green: hsla(97, 9%, 52%, 1);
+  --d-tan: hsla(52, 11%, 64%, 1);
+  --l-tan: hsla(45, 40%, 65%, 1);
+}

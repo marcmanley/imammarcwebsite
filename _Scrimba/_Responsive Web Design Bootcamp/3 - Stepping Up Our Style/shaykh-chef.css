@@ -1,0 +1,360 @@
+* {
+  margin: 0;
+  padding: 0;
+  /* border-box means that the total width is whatever the width is set to including the margin, padding, and border vs. adding the margin, padding, and border to the width */
+  box-sizing: border-box; /* this fixes the overflow scrolling issue */
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: natom-pro, sans-serif;
+  font-weight: 500;
+  text-align: center;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 300;
+  color: var(--white);
+  margin: 0;
+}
+
+/* the "+" indicates a <p> following, or coming after, an <h1> */
+h1 + p {
+  color: var(--orange);
+  font-weight: 900;
+  font-size: 1.3125rem;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 1.3125rem;
+}
+
+/* the "+" indicates a <p> following, or coming after, an <h2> */
+h2 + p {
+  font-weight: 900;
+  color: var(--orange);
+  margin: 0;
+}
+
+a,
+a:hover,
+a:focus {
+  color: var(--orange);
+  text-decoration: none;
+}
+
+strong {
+  font-family: natom-pro-title, sans-serif;
+  font-weight: 700;
+}
+
+form {
+  margin: 1em 0 2em 0;
+}
+
+.webinar-email-collector {
+  width: 80%;
+  max-width: 300px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.webinar-email-collector input {
+  transform: scale(1);
+  transition: transform 300ms;
+}
+
+.webinar-email-collector input:focus {
+  transform: scale(1.1);
+}
+
+input {
+  color: var(--d-grey);
+  border: 1px solid var(--d-grey);
+  border-radius: 5px;
+  width: 100%;
+  margin: 0 0 1.5em 0;
+  padding: 1em 0;
+  font-size: 1rem;
+  font-family: inherit;
+  text-align: inherit;
+}
+
+/* this selects only inputs with type of "text" */
+input[type="text"] {
+}
+
+input::placeholder {
+  text-align: center;
+}
+
+label {
+  color: var(--white);
+}
+
+button {
+  padding: 0.35em 0.65em;
+  background-color: var(--orange);
+  color: var(--white);
+  font-weight: 700;
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+button:hover {
+}
+
+.btn {
+  width: 100%;
+  border: 0;
+  border-radius: 5px;
+  padding: 1.5em 0;
+  display: inline-block;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+.btn-orange {
+  color: var(--white);
+  background-image: linear-gradient(135deg, var(--i-orange), var(--i-blue));
+  transform: scale(1);
+  transition: transform 300ms;
+  font-family: natom-pro-title, sans-serif;
+  font-size: 1rem;
+  /* transition: color 500ms; */
+  /* background-image: radial-gradient(); */
+}
+
+.btn-orange:hover,
+.btn-orange:focus {
+  /* color: var(--grey); */
+  transform: scale(1.06758925);
+}
+
+/* === INTRO === */
+
+.basmallah {
+  font-family: co-arabic, sans-serif;
+  font-weight: 400;
+  font-size: 105%;
+  padding: 0 0 1em 0;
+  display: inline-block;
+}
+
+.salaam {
+  font-family: co-arabic, sans-serif;
+  font-weight: 400;
+  font-size: 40%;
+}
+
+.arabic {
+  font-family: co-arabic, sans-serif;
+  font-weight: 300;
+  font-size: 110%;
+}
+
+.intro {
+  background-image: url(media/images/shaykh-chef-tajin-1.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 0 0.5em 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 50vh;
+  /* background-color: hsla(0, 0%, 64%, 1); */
+  /* background-blend-mode: multiply; */
+  background-blend-mode: screen;
+  /* also don't forget to turn off bg color */
+  /* filter: brightness(50%); */
+  /* background-image: url(media/images/shaykh-chef-tajin-1.jpg), linear-gradient(45deg,var(--orange), teal); */
+}
+
+.intro-title {
+  order: 1;
+  margin: 2em 0;
+}
+
+.intro-link {
+  font-size: 3vw;
+  background-color: hsla(0, 0%, 100%, 0.7);
+  border-radius: 5px;
+  padding: 0.25em 0.5em 0.4em 0.5em;
+  display: inline-block;
+  order: 3;
+}
+
+.intro-body {
+  /* background-color: hsla(0, 0%, 100%, 0.65); */
+  /* border-radius: 5px; */
+  transform: scale(1);
+  transition: transform 300ms;
+  padding: 0 0.5em 2em;
+  order: 2;
+}
+
+.intro-body:hover,
+.intro-body:focus {
+  transform: scale(1.1);
+}
+
+.intro-top-text {
+  margin: 0;
+  padding-top: 3px;
+  font-family: natom-pro-title, sans-serif;
+  font-weight: 700;
+  font-size: 0.825rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--orange);
+  border-width: 5px 0 0 0;
+  border-style: solid;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(
+    to right,
+    var(--i-orange),
+    var(--i-blue)
+  );
+  /* border-top: 5px solid var(--orange); */
+}
+
+/* === MAIN CONTENT === */
+
+.main-content {
+  margin: 0;
+  padding: 0 1em;
+}
+
+.intro > *,
+.main-content > * {
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.main-content-title {
+  padding: 1em 2em;
+  font-weight: 900;
+  font-size: 1.4125rem;
+}
+
+.main-content-subtitle {
+  padding: 0 0 1em 0;
+  font-size: 1.3325;
+  text-transform: uppercase;
+}
+
+.main-content-body {
+  padding: 0 0.5rem 1.5rem 0.5rem;
+  line-height: 1.5;
+  font-size: 1.1325rem;
+}
+
+.fine-print {
+  margin: 0 auto;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+  padding: 0 0 6em 0;
+  width: 60%;
+}
+
+/* === Media Queries === */
+
+/* min-width is for big screens */
+
+@media (min-width: 1025px) {
+  body {
+    font-size: 1.125rem;
+    display: flex;
+  }
+
+  h1 {
+    font-size: 3.5rem;
+  }
+
+  h1 + p,
+  h2 {
+    font-size: 1.75rem;
+  }
+
+  .intro-link {
+    font-size: 1.25vw;
+    display: block;
+  }
+
+  .basmallah {
+    font-size: 75%;
+  }
+
+  .intro,
+  .main-content {
+    width: 50%;
+    min-height: 100vh;
+    padding: 0 3em;
+  }
+
+  /* only affecting DIRECT children of the parent element */
+  .intro > * {
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .main-content > * {
+    max-width: 575px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .main-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .webinar-email-collector {
+    width: 80%;
+    max-width: 300px;
+    /* text-align: center;
+    margin-left: auto;
+    margin-right: auto; */
+  }
+}
+
+/* @media (min-width: 1021px) {
+  body {
+    font-size: 1.125rem;
+    display: flex;
+  }
+
+  h1 {
+    font-size: 3.5rem;
+  }
+
+  h1 + p,
+  h2 {
+    font-size: 1.75rem;
+  }
+
+  .intro,
+  .main-content {
+    width: 50%;
+    min-height: 100vh;
+    padding: 0 4em;
+  }
+} */

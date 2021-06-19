@@ -1,0 +1,48 @@
+a {
+  color: #fff;
+}
+
+a:hover {
+  color: hsl(202, 88%, 94%);
+}
+
+.mothership {
+  display: grid;
+  place-items: center;
+}
+
+.top-mast {
+  background-color: hsl(34, 100%, 64%);
+}
+
+.top-mast h1 {
+  color: #fff;
+}
+
+.navigation {
+  background-color: hsl(202, 100%, 64%);
+}
+
+.main-body {
+  background-color: hsl(0, 0%, 33%);
+}
+
+.main-body p {
+  color: #fff;
+}
+
+.google-sheets-iframe {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 35px;
+  height: 0;
+  overflow: hidden;
+}
+
+.google-sheets-iframe iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}

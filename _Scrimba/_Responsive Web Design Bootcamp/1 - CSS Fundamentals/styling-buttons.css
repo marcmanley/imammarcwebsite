@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1,
+p {
+  margin-top: 0;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+p {
+  font-size: 1.5rem;
+}
+
+a {
+  color: hsla(54, 100%, 50%, 1);
+  text-decoration: none;
+}
+
+.accent-color {
+  color: hsla(54, 100%, 50%, 1);
+}
+
+.button {
+  background: hsla(54, 100%, 50%, 1);
+  padding: 2.5rem;
+  color: hsla(1, 0%, 0%, 1);
+  display: inline-block;
+}
+
+.button a {
+  color: black;
+}
+
+.card {
+  background: hsla(1, 0%, 0%, 1);
+  color: #fff;
+  width: 55%;
+  margin: 0 auto;
+  padding: 4rem;
+}
+
+.card h1 {
+  padding: 0 0 3rem 0;
+}
+
+/* .card p {
+  padding: 0 0 2rem 0;
+} */
+
+.links {
+  margin-top: 3rem;
+  margin-bottom: 0;
+}

@@ -1,0 +1,64 @@
+* {
+  margin: 0%;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1,
+p {
+  margin-top: 0;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin: 0 0 2rem;
+  text-transform: capitalize;
+}
+
+p {
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+}
+
+a {
+  color: hsla(44, 100%, 55%, 1);
+  /* color: hsla(0, 100%, 50%, 1); */
+  text-decoration: none;
+}
+
+strong {
+  background-color: hsla(44, 100%, 55%, 1);
+  color: hsla(0, 0%, 20%, 1);
+  padding: 0 0.5rem 0 0.5rem;
+}
+
+.button {
+  background: hsla(44, 100%, 55%, 1);
+  color: hsla(0, 0%, 0%, 1);
+  padding: 2rem;
+  margin: 0 1rem 0 0;
+}
+
+.card {
+  background-color: hsla(0, 0%, 20%, 1);
+  /* background-color: hsla(0, 0%, 25%, 1); */
+  color: hsla(0, 0%, 100%, 1);
+  width: 60%;
+  margin: 0 auto;
+  padding: 10rem 4.5rem 4.5rem 4.5rem;
+}
+
+.goldie {
+  color: hsla(44, 100%, 55%, 1);
+}
+
+.links {
+  margin: 4rem 0 0 0;
+}
