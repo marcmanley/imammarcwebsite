@@ -1,0 +1,13 @@
+# this is a file to ignore certain items for git status/commits
+
+_Fireship/
+_logs/
+_Tech/
+_VS Code
+newandalus/
+
+# all log files
+*.log
+
+# all PDFs
+*.pdf
