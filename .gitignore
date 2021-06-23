@@ -12,3 +12,6 @@ SampleP/
 
 # all PDFs
 *.pdf
+
+# ignore these Mac OS files
+*.DS_Store
