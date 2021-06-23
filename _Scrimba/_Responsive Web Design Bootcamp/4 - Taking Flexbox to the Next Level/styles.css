@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  margin: 0;
+  background: #5d6e80;
+  color: #fff;
+  text-align: center;
+  font-family: natom-pro, sans-serif;
+  font-weight: 400;
+}
+
+h1,
+h2 {
+  margin: 3vh auto 0 auto;
+  font-family: natom-pro-title, sans-serif;
+  font-weight: 900;
+  font-size: 2.75rem;
+  letter-spacing: 1px;
+}
+
+a,
+a:hover,
+a:focus {
+  color: #731810;
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.flex-container {
+  border: 10px solid #95b0cc;
+  max-width: 700px;
+  min-height: 25vh;
+  margin: 5vh auto 0 auto;
+  padding: 0.25em;
+  display: flex;
+  justify-content: center;
+  /* align-items: stretch; */
+  flex-direction: column; /* default */
+  /* flex-wrap: wrap; */ /* nowrap is the default */
+  /* flex-flow: row wrap; */ /* this is the shorthand for flex-direction and flex-wrap */
+}
+
+.flex-item {
+  background-color: #badbff;
+  margin: 0.5em;
+  padding: 1em;
+  color: #375a80;
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.align-items-stretch {
+  align-items: stretch;
+}
+
+.flex-direction-row {
+  flex-direction: row;
+}
+
+.align-content-flex-start {
+  align-content: flex-start;
+}
+
+.flex-wrap-wrap {
+  flex-wrap: wrap;
+}
+
+.empty-space {
+  min-height: 300vh;
+}
+
+.blurb {
+  margin: 1rem auto 0 auto;
+  padding: 0 2rem;
+  line-height: 1.5;
+}
+
+.code {
+  margin: 0 0.25rem;
+  padding: 0.25em 0.35em;
+  background: #badbff;
+  display: inline-block;
+  color: #333;
+  font-family: monospace;
+  border-radius: 3px;
+}
