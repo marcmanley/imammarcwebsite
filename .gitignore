@@ -1,5 +1,6 @@
 # this is a file to ignore certain items for git status/commits
 
+# ignore these folders
 _Fireship/
 _logs/
 _Tech/
