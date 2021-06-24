@@ -36,18 +36,16 @@ a:focus {
   text-decoration: none;
 }
 
+/* flex shorthand: grow shrink basis; */
+
+/* flex-flow: direction wrap */
+
 .flex-container {
   border: 10px solid #95b0cc;
-  max-width: 75%;
-  min-height: 25vh;
+  width: 75%;
   margin: 5vh auto 0 auto;
   padding: 0.25em;
   display: flex;
-  justify-content: center;
-  /* align-items: stretch; */
-  flex-direction: column; /* default */
-  /* flex-wrap: wrap; */ /* nowrap is the default */
-  /* flex-flow: row wrap; */ /* this is the shorthand for flex-direction and flex-wrap */
 }
 
 .flex-item {
@@ -86,6 +84,10 @@ a:focus {
 
 .flex-grow-small {
   flex-grow: 1;
+}
+
+.flex-grow-no-grow {
+  flex-grow: 0;
 }
 
 .empty-space {
