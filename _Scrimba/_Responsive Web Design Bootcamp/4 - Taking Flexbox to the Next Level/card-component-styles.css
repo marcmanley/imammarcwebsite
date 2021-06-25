@@ -24,6 +24,13 @@
   --dramatic-quran-peach: hsla(28, 76%, 79%, 1);
   --dramatic-quran-grey: hsla(30, 7%, 95%, 1);
   --dramatic-quran-black: hsla(0, 0%, 10%, 1);
+  --andalus-quran-tan: #a68568;
+  --andalus-quran-l-tan: #d9bea7;
+  --andalus-quran-clay: #8c4f2b;
+  --andalus-quran-brown: #593f2f;
+  --andalus-quran-skin: #f2d5c4;
+  --333: #333333;
+  --800: #800000;
 }
 
 * {
@@ -38,7 +45,7 @@ html {
 
 body {
   font-weight: 500;
-  background: var(--dramatic-quran-black);
+  background: var(--v-l-grey);
 }
 
 h1,
@@ -52,7 +59,7 @@ h3 {
 h2 {
   font-weight: 900;
   font-size: 3.25rem;
-  color: var(--i-blue);
+  /* color: var(--andalus-quran-skin); */
 }
 
 p {
@@ -78,32 +85,57 @@ a {
   width: 100%;
   margin: 0 auto;
   max-width: 800px;
-  background: var(--dramatic-quran-black);
+  background: var(--v-l-grey);
   color: var(--l-grey);
   display: flex;
   flex-direction: column;
 }
 
+@media (min-width: 600px) {
+  .card {
+    flex-direction: row;
+  }
+  .card-img {
+    /* flex-basis: 300px; */
+    height: 300px;
+  }
+}
+
 .card-img {
   object-fit: cover;
   object-position: center;
-  height: 200px;
+  flex-basis: 400px;
+  min-width: 0;
+  min-height: 0;
+}
+
+.image-desktop {
+  display: none;
+}
+
+@media (min-width: 600px) {
+  .image-mobile {
+    display: none;
+  }
+  .image-desktop {
+    display: block;
+  }
 }
 
 .card-content {
-  padding: 1.5em 2em;
+  padding: 1.5em;
 }
 
 .card-title {
   font-weight: 700;
   font-size: 1.75rem;
-  color: var(--dramatic-quran-yellow);
+  color: var(--800);
   text-transform: uppercase;
   margin: 0;
 }
 
 .card-body {
-  color: var(--dramatic-quran-grey);
+  color: var(--333);
   font-size: 1.25rem;
   line-height: 1.5;
   margin: 1rem 0 0 0;
@@ -119,8 +151,8 @@ a {
 .card-btn {
   font-family: interstate, sans-serif;
   font-size: 1.25rem;
-  color: var(--dramatic-quran-black);
-  background: var(--dramatic-quran-yellow);
+  color: var(--l-grey);
+  background: var(--800);
   border-radius: 3px;
   font-weight: 900;
   padding: 0.5rem 0.5rem 0.5rem 0.5rem;
@@ -131,7 +163,9 @@ a {
   font-family: interstate, sans-serif;
   font-weight: 700;
   padding: 0;
-  color: var(--dramatic-quran-grey);
+  color: var(--333);
+  line-height: 1;
+  /* opacity: 0.75; */
 }
 
 .card-read-time span {
@@ -140,5 +174,5 @@ a {
 }
 
 .card-read-time span:first-child {
-  font-size: 2.5rem;
+  font-size: 2.25rem;
 }
