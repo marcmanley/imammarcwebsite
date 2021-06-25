@@ -1,0 +1,144 @@
+:root {
+  --white: hsla(0, 0%, 100%, 1);
+  --grey: hsla(0, 0%, 80%, 1);
+  --d-grey: hsla(0, 0%, 44%, 1);
+  --l-grey: hsla(0, 0%, 90%, 1);
+  --v-l-grey: hsla(0, 0%, 95%, 1);
+  --d-blue: hsla(215, 75%, 16%, 1);
+  --l-blue: hsla(215, 31%, 54%, 1);
+  --i-blue: hsla(215, 100%, 68%, 1);
+  --orange: hsla(16, 68%, 55%, 1);
+  --i-orange: hsla(16, 100%, 45%, 1);
+  --l-orange: hsla(16, 68%, 75%, 1);
+  --tajin-red: hsla(16, 67%, 33%, 1);
+  --l-pink: hsla(4, 42%, 75%, 1);
+  --shaykh-chef-black: hsla(0, 0%, 5%, 1);
+  --tumeric: hsla(39, 96%, 43%, 1);
+  --l-yellow: hsla(39, 75%, 79%, 1);
+  --brown: hsla(28, 46%, 53%, 1);
+  --clay: hsla(22, 85%, 65%, 1);
+  --d-clay: hsla(22, 85%, 45%, 1);
+  --off-black: hsla(0, 0%, 5%, 1);
+  --dramatic-quran-yellow: hsla(50, 84%, 69%, 1);
+  --dramatic-quran-brown: hsla(33, 45%, 45%, 1);
+  --dramatic-quran-peach: hsla(28, 76%, 79%, 1);
+  --dramatic-quran-grey: hsla(30, 7%, 95%, 1);
+  --dramatic-quran-black: hsla(0, 0%, 10%, 1);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-weight: 500;
+  background: var(--dramatic-quran-black);
+}
+
+h1,
+h2,
+h3 {
+  font-family: interstate, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  font-weight: 900;
+  font-size: 3.25rem;
+  color: var(--i-blue);
+}
+
+p {
+  font-family: source-serif-pro, serif;
+  font-weight: 400;
+  font-size: 1.25rem;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* mobile first */
+
+.card {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 800px;
+  background: var(--dramatic-quran-black);
+  color: var(--l-grey);
+  display: flex;
+  flex-direction: column;
+}
+
+.card-img {
+  object-fit: cover;
+  object-position: center;
+  height: 200px;
+}
+
+.card-content {
+  padding: 1.5em 2em;
+}
+
+.card-title {
+  font-weight: 700;
+  font-size: 1.75rem;
+  color: var(--dramatic-quran-yellow);
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.card-body {
+  color: var(--dramatic-quran-grey);
+  font-size: 1.25rem;
+  line-height: 1.5;
+  margin: 1rem 0 0 0;
+}
+
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin: 1rem 0 0 0;
+}
+
+.card-btn {
+  font-family: interstate, sans-serif;
+  font-size: 1.25rem;
+  color: var(--dramatic-quran-black);
+  background: var(--dramatic-quran-yellow);
+  border-radius: 3px;
+  font-weight: 900;
+  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+}
+
+.card-read-time {
+  margin: 0;
+  font-family: interstate, sans-serif;
+  font-weight: 700;
+  padding: 0;
+  color: var(--dramatic-quran-grey);
+}
+
+.card-read-time span {
+  display: block;
+  font-weight: 900;
+}
+
+.card-read-time span:first-child {
+  font-size: 2.5rem;
+}
