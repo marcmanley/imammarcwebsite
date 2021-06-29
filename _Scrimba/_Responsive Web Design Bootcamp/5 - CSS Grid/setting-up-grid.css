@@ -1,0 +1,101 @@
+:root {
+  --white: hsla(0, 0%, 100%, 1);
+  --grey: hsla(0, 0%, 80%, 1);
+  --d-grey: hsla(0, 0%, 44%, 1);
+  --l-grey: hsla(0, 0%, 90%, 1);
+  --v-l-grey: hsla(0, 0%, 95%, 1);
+  --d-blue: hsla(215, 75%, 16%, 1);
+  --l-blue: hsla(215, 31%, 54%, 1);
+  --i-blue: hsla(215, 100%, 68%, 1);
+  --orange: hsla(16, 68%, 55%, 1);
+  --i-orange: hsla(16, 100%, 45%, 1);
+  --l-orange: hsla(16, 68%, 75%, 1);
+  --tajin-red: hsla(16, 67%, 33%, 1);
+  --l-pink: hsla(4, 42%, 75%, 1);
+  --shaykh-chef-black: hsla(0, 0%, 5%, 1);
+  --tumeric: hsla(39, 96%, 43%, 1);
+  --l-yellow: hsla(39, 75%, 79%, 1);
+  --brown: hsla(28, 46%, 53%, 1);
+  --clay: hsla(22, 85%, 65%, 1);
+  --d-clay: hsla(22, 85%, 45%, 1);
+  --off-black: hsla(0, 0%, 5%, 1);
+  --dramatic-quran-yellow: hsla(50, 84%, 69%, 1);
+  --dramatic-quran-brown: hsla(33, 45%, 45%, 1);
+  --dramatic-quran-peach: hsla(28, 76%, 79%, 1);
+  --dramatic-quran-grey: hsla(30, 7%, 95%, 1);
+  --dramatic-quran-black: hsla(0, 0%, 10%, 1);
+  --andalus-quran-tan: #a68568;
+  --andalus-quran-l-tan: #d9bea7;
+  --andalus-quran-clay: #8c4f2b;
+  --andalus-quran-brown: #593f2f;
+  --andalus-quran-skin: #f2d5c4;
+  --333: #333333;
+  --800: #800000;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: interstate, sans-serif;
+  font-weight: 500;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: var(--800);
+  letter-spacing: 1px;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.grid {
+  display: grid;
+  grid-template: 100px 100px 100px 100px / 200px 200px 200px 200px;
+}
+
+.grid-item {
+  padding: 1em 2em;
+  border: 2px solid var(--d-blue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.grid-item-1 {
+  background: var(--l-grey);
+  color: var(--i-blue);
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.grid-item-2 {
+  background: var(--l-orange);
+  color: var(--i-blue);
+  grid-column-start: 2;
+  grid-column-end: 4;
+}
+
+.grid-item-3 {
+  background: var(--l-yellow);
+  color: var(--i-blue);
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+.grid-item-4 {
+  background: var(--off-black);
+  color: var(--i-blue);
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
