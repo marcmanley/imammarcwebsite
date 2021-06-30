@@ -1,4 +1,9 @@
 :root {
+  --traffic-cone: hsla(24, 100%, 45%, 1);
+  --perrywinkle-blue: hsla(204, 100%, 50%, 1);
+  --forest-green: hsla(118, 100%, 25%, 1);
+  --grey: hsla(0, 0%, 25%, 1);
+  --red: hsla(0, 100%, 25%, 1);
 }
 
 * {
@@ -38,27 +43,29 @@ body {
   padding: 2em;
   text-align: center;
   color: white;
+  font-size: 1.25em;
+  font-weight: 900;
 }
 
 .title {
   grid-area: title;
-  background-color: #333;
+  background-color: var(--grey);
 }
 .header {
   grid-area: header;
-  background-color: #800000;
+  background-color: var(--forest-green);
 }
 .sidebar {
   grid-area: sidebar;
-  background-color: #8e12f6;
+  background-color: var(--traffic-cone);
 }
 .content {
   grid-area: content;
-  background-color: #3a45de;
+  background-color: var(--perrywinkle-blue);
 }
 .footer {
   grid-area: footer;
-  background-color: black;
+  background-color: var(--red);
 }
 
 @media screen and (min-width: 600px) {
