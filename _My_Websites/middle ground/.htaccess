@@ -1,0 +1,16 @@
+# BEGIN (mt) controlled settings
+
+<IfModule !mod_fcgid.c>
+AddHandler application/x-httpd-php80 .php
+</IfModule>
+<IfModule mod_fcgid.c>
+AddHandler fcgid-script .php
+FcgidWrapper /etc/apache2/gs-bin/php-stable-wrapper .php
+<Files \*.php>
+Options +ExecCGI
+</Files>
+</IfModule>
+
+# END (mt) controlled settings
+
+# old AddHandler php5-script .php
